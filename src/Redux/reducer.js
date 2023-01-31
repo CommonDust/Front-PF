@@ -18,7 +18,7 @@ const initialState = {
         case GET_ALL_MOVIES:
       return {
         ...state,
-        dogs: action.payload,
+        movies: action.payload,
       };
 
     case GET_MOVIE_ID:
@@ -30,7 +30,7 @@ const initialState = {
     case GET_MOVIE_BY_QUERY:
       return {
         ...state,
-        dogs: action.payload,
+        movies: action.payload,
       };
 
       case GET_GENRE:
@@ -138,7 +138,7 @@ const initialState = {
         };
       } else {
 
-        filteredGenre = allDogs2.filter((e) => {
+        filteredGenre = allMovies2.filter((e) => {
           return e.genre?.includes(action.payload);
         });
         return {
