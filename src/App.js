@@ -1,10 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Landing from "./Pages/Landing";
 
 function App() {
   return (
     <div className="App">
+      <Landing/>
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Landing} />
